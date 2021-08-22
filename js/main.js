@@ -1,3 +1,8 @@
+/*
+WebSite: Coffee Shop Website
+Author: César A Rivas @ceauris
+*/
+
 let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () => {
