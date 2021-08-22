@@ -1,32 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+/* variables de colores a usar */
 :root {
     --main-color: #d3ad7f;
     --black: #13131a;
+    --white: #fff;
     --bg: #010103;
     --border: .1rem solid rgba(255,255,255,.3);
 }
 
+/* reset de valores */
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
+    text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
-    text-decoration: none;
 }
 
+/* valores para alguas propiedades */
 html {
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
 
+/* cambiar el scrollbar por defecto - solo para Chrome */
 html::-webkit-scrollbar {
-    width: 8rem;
+    width: .8rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -38,14 +44,17 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }
 
+/* color de fondo para el body */
 body {
     background: var(--bg);
 }
 
+/* padding para las secciones utilizadas */
 section {
     padding: 2rem 7%;
 }
 
+/* cabecera de la página */
 .heading {
     text-align: center;
     color: #fff;
@@ -86,7 +95,7 @@ section {
 }
 
 .header .logo img {
-    height: 6rem;
+    height: 7rem;
 }
 
 .header .navbar a {
@@ -205,6 +214,7 @@ section {
     text-align: center;
 }
 
+/* sección home */
 .home {
     min-height: 100vh;
     display: flex;
@@ -232,6 +242,7 @@ section {
     color: #eee;
 }
 
+/* sección about */
 .about .row {
     display: flex;
     align-items: center;
@@ -264,6 +275,7 @@ section {
     line-height: 1.8;
 }
 
+/* sección menu */
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -307,8 +319,7 @@ section {
     color: var(--black);
 }
 
-/* products */
-
+/* sección productos */
 .products .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -368,8 +379,7 @@ section {
     font-size: 1.5rem;
 }
 
-/* reviews */
-
+/* sección reviews */
 .review .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -407,7 +417,7 @@ section {
     color: var(--main-color);
 }
 
-/* contacts */
+/* sección contactos */
 
 .contact .row {
     display: flex;
@@ -458,6 +468,7 @@ section {
     background: none;
 }
 
+/* sección blogs */
 .blogs .box-container {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
@@ -512,6 +523,7 @@ section {
     padding: 1rem 0;
 }
 
+/* footer */
 .footer {
     background: var(--black);
     text-align: center;
@@ -540,12 +552,12 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 2rem 0;
     gap: 1rem;
 }
 
 .footer .links a {
-    padding: 0.7rem;
+    padding: .7rem 2rem;
     color: #fff;
     border: var(--border);
     font-size: 2rem;
@@ -562,11 +574,9 @@ section {
     padding: 1.5rem;
 }
 
-.footer .credit span {
+.footer .credit span a {
     color: var(--main-color);
 }
-
-
 
 
 /* media queries */
@@ -639,6 +649,3 @@ section {
     }
 
 }
-
-
-
