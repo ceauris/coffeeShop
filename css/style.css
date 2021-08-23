@@ -475,8 +475,8 @@ section {
 
 /* sección blogs */
 .blogs .box-container {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
