@@ -15,5 +15,5 @@ Diseño de una Web totalmente responsive y de una sola página para una tienda d
 - Sección blogs con targetas usando css grid.
 - Sección footer responsive.
 
-![Imagen Web](/images/coffeShop.png)
+![Imagen Web](/images/coffeShop.jpg)
 
